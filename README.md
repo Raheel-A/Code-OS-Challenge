@@ -5,7 +5,7 @@
 ### Dependencies
 
 * Make sure that you are using Unreal 4.27.2 or above
-* It's a more a code test so be sure that you have VisualStudio, Rider or NotePad++
+* It's a code test so be sure that you have VisualStudio, Rider or NotePad++
 
 ### Getting project
 
@@ -23,7 +23,7 @@ Subsystem itself is spread across files:
 * Source/VirtexOSCode/Public/SocialSubsystem.h
 * Source/VirtexOSCode/Private/SocialSubsystem.cpp
 
-Ideally all changes should be done only to those files.
+Ideally, all your changes should be done only to those files, but if you feel you need to change something else, dont feel restricted to do so.
 
 UI is already created and just waiting for subsystem to start working properly.
 
