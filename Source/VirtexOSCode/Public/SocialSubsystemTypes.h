@@ -20,6 +20,11 @@ public:
 		return Lhs.Nickname == Rhs.Nickname;
 	}
 
+	friend inline bool operator<(const FFriendStruct& Lhs, const FFriendStruct& Rhs)
+	{
+		return Lhs.Nickname < Rhs.Nickname;
+	}
+
 	friend uint32 GetTypeHash(const FFriendStruct& A)
 	{
 		return GetTypeHash(A.Nickname);

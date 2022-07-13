@@ -61,5 +61,15 @@ class VIRTEXOSCODE_API USocialSubsystem : public UGameInstanceSubsystem, public 
 private:
 	bool QueryFriendList();
 	void OnQueryComplete(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bConnectedSuccessfully);
+	
+	//bool SortAlphabetial(FFriendStruct i, FFriendStruct j);
+	TArray<FFriendStruct>* CombineArrays(TArray<FFriendStruct>* OnlineFriends, TArray<FFriendStruct>* OfflineFriends);
 
+	TArray<FFriendStruct>* MyFriendsOrdered = new TArray<FFriendStruct>;
+	TArray<FFriendStruct>* MyFriendsOnline = new TArray<FFriendStruct>;
+	TArray<FFriendStruct>* MyFriendsOffline = new TArray<FFriendStruct>;
+
+	float MyTicker;
+	float TickInterval = 5.0f;
+	bool FirstLoad = true;
 };
