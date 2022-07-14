@@ -20,6 +20,7 @@ public:
 		return Lhs.Nickname == Rhs.Nickname;
 	}
 
+	//Added this operator to help with sorting the friends list into alphabetical order - Raheel Ahmad 13/07/22
 	friend inline bool operator<(const FFriendStruct& Lhs, const FFriendStruct& Rhs)
 	{
 		return Lhs.Nickname < Rhs.Nickname;
